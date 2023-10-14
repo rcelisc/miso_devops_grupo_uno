@@ -1,0 +1,43 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "350185020979.dkr.ecr.us-east-1.amazonaws.com/devops_imagenes:listas_negras-1.0",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": 80
+      }
+    ],
+    "Environment": [
+      {
+        "Name": "VERSION",
+        "Value": "1.0"
+      },
+      {
+        "Name": "DB_USER",
+        "Value": "postgres"
+      },
+      {
+        "Name": "DB_PASSWORD",
+        "Value": "nativa1234"
+      },
+      {
+        "Name": "DB_HOST",
+        "Value": "localhost"
+      },
+      {
+        "Name": "DB_PORT",
+        "Value": "5432"
+      },
+      {
+        "Name": "DB_NAME",
+        "Value": "db_blacklist"
+      },
+      {
+        "Name": "SECRET_TOKEN",
+        "Value": "qwerty"
+      }
+    ]
+  }
+  
