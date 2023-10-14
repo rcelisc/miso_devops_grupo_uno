@@ -28,7 +28,6 @@ def create_list():
 # 2. Consultar Email.
 @blacklist_blueprint.route('/blacklists/<email>', methods = ['GET'])
 def get_mail(email):
-    print ("El mail: ", email)
     token_bearer=request.headers.get('Authorization')
     if token_bearer is None:
         token=""
